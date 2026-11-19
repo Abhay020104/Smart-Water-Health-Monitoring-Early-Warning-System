@@ -1,0 +1,195 @@
+{
+  "water_quality_classification": {
+    "best_model": "K-Nearest Neighbors",
+    "results": {
+      "Logistic Regression": {
+        "accuracy": 0.8799,
+        "precision": 0.8123,
+        "recall": 0.8799,
+        "f1_score": 0.8287,
+        "training_time_sec": 5.4
+      },
+      "Decision Tree": {
+        "accuracy": 0.8539,
+        "precision": 0.8157,
+        "recall": 0.8539,
+        "f1_score": 0.8299,
+        "training_time_sec": 1.1
+      },
+      "Random Forest": {
+        "accuracy": 0.8807,
+        "precision": 0.7874,
+        "recall": 0.8807,
+        "f1_score": 0.8285,
+        "training_time_sec": 5.3
+      },
+      "Gradient Boosting": {
+        "accuracy": 0.8803,
+        "precision": 0.7987,
+        "recall": 0.8803,
+        "f1_score": 0.8284,
+        "training_time_sec": 193.0
+      },
+      "XGBoost": {
+        "accuracy": 0.8803,
+        "precision": 0.8253,
+        "recall": 0.8803,
+        "f1_score": 0.8289,
+        "training_time_sec": 1.6
+      },
+      "K-Nearest Neighbors": {
+        "accuracy": 0.8572,
+        "precision": 0.8167,
+        "recall": 0.8572,
+        "f1_score": 0.8311,
+        "training_time_sec": 18.6
+      },
+      "Linear SVM": {
+        "accuracy": 0.8807,
+        "precision": 0.7874,
+        "recall": 0.8807,
+        "f1_score": 0.8285,
+        "training_time_sec": 2.9
+      },
+      "Naive Bayes": {
+        "accuracy": 0.8789,
+        "precision": 0.8082,
+        "recall": 0.8789,
+        "f1_score": 0.8285,
+        "training_time_sec": 0.1
+      },
+      "AdaBoost": {
+        "accuracy": 0.8798,
+        "precision": 0.8155,
+        "recall": 0.8798,
+        "f1_score": 0.8288,
+        "training_time_sec": 21.7
+      },
+      "Extra Trees": {
+        "accuracy": 0.8807,
+        "precision": 0.7874,
+        "recall": 0.8807,
+        "f1_score": 0.8285,
+        "training_time_sec": 2.2
+      }
+    }
+  },
+  "disease_prediction": {
+    "best_model": "XGBoost",
+    "results": {
+      "Logistic Regression": {
+        "accuracy": 0.8753,
+        "precision": 0.8748,
+        "recall": 0.8753,
+        "f1_score": 0.8744,
+        "training_time_sec": 10.0
+      },
+      "Decision Tree": {
+        "accuracy": 0.9153,
+        "precision": 0.9172,
+        "recall": 0.9153,
+        "f1_score": 0.915,
+        "training_time_sec": 2.7
+      },
+      "Random Forest": {
+        "accuracy": 0.9297,
+        "precision": 0.9321,
+        "recall": 0.9297,
+        "f1_score": 0.9294,
+        "training_time_sec": 6.6
+      },
+      "Gradient Boosting": {
+        "accuracy": 0.9387,
+        "precision": 0.9392,
+        "recall": 0.9387,
+        "f1_score": 0.9383,
+        "training_time_sec": 799.1
+      },
+      "XGBoost": {
+        "accuracy": 0.9413,
+        "precision": 0.9416,
+        "recall": 0.9413,
+        "f1_score": 0.9409,
+        "training_time_sec": 3.4
+      },
+      "K-Nearest Neighbors": {
+        "accuracy": 0.8397,
+        "precision": 0.8394,
+        "recall": 0.8397,
+        "f1_score": 0.8378,
+        "training_time_sec": 6.3
+      },
+      "Linear SVM": {
+        "accuracy": 0.8472,
+        "precision": 0.8465,
+        "recall": 0.8472,
+        "f1_score": 0.8458,
+        "training_time_sec": 7.4
+      },
+      "Naive Bayes": {
+        "accuracy": 0.8569,
+        "precision": 0.8588,
+        "recall": 0.8569,
+        "f1_score": 0.8566,
+        "training_time_sec": 0.2
+      },
+      "AdaBoost": {
+        "accuracy": 0.8506,
+        "precision": 0.863,
+        "recall": 0.8506,
+        "f1_score": 0.8532,
+        "training_time_sec": 25.5
+      },
+      "Extra Trees": {
+        "accuracy": 0.8965,
+        "precision": 0.8979,
+        "recall": 0.8965,
+        "f1_score": 0.8958,
+        "training_time_sec": 3.3
+      }
+    }
+  },
+  "wq_features": [
+    "water_source_encoded",
+    "water_treatment_encoded",
+    "ph",
+    "turbidity_ntu",
+    "dissolved_oxygen_mg_l",
+    "bod_mg_l",
+    "fecal_coliform_per_100ml",
+    "total_coliform_per_100ml",
+    "tds_mg_l",
+    "nitrate_mg_l",
+    "fluoride_mg_l",
+    "arsenic_ug_l"
+  ],
+  "disease_features": [
+    "water_source_encoded",
+    "water_treatment_encoded",
+    "water_quality_index",
+    "ph",
+    "turbidity_ntu",
+    "dissolved_oxygen_mg_l",
+    "bod_mg_l",
+    "fecal_coliform_per_100ml",
+    "total_coliform_per_100ml",
+    "tds_mg_l",
+    "nitrate_mg_l",
+    "fluoride_mg_l",
+    "arsenic_ug_l",
+    "open_defecation_rate",
+    "avg_temperature_c",
+    "avg_rainfall_mm",
+    "avg_humidity_pct",
+    "flooding",
+    "symptom_diarrhea",
+    "symptom_vomiting",
+    "symptom_fever",
+    "symptom_abdominal_pain",
+    "symptom_dehydration",
+    "symptom_jaundice",
+    "symptom_bloody_stool",
+    "symptom_skin_rash"
+  ],
+  "sample_size": 200000
+}
